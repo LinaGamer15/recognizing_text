@@ -1,0 +1,6 @@
+opencv-python~=4.5.2.54
+pytesseract~=0.3.8
+Flask~=2.0.1
+WTForms~=2.3.3
+Werkzeug~=2.0.1
+Pillow~=8.3.0

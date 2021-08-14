@@ -1,0 +1,11 @@
+.shadows {
+box-shadow: 0 .5rem 1rem rgba(80, 137, 198, 0.30)!important
+}
+.h1 {
+color: #6bb1ff;
+font-weight: 700;
+}
+.button {
+background: #6bb1ff !important;
+border-color: #6bb1ff !important;
+}
