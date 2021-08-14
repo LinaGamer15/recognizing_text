@@ -62,7 +62,7 @@ def rec_text(path):
     new_text = text[:i] + '\n\n' + text[i + 1:]
     text_l = new_text.split()
     texts = new_text.strip().split('\n\n')
-    text_to_file = new_text.strip().replace('\n\n', ';').replace('\n', '').replace(';', ';\n')
+    text_to_file = new_text.strip().replace('\n\n', ';').replace('\n', '').replace(';', '\n')
     name_file = ''
     for i1 in range(len(text_l)):
         if text_l[i1] == 'Уровень':
@@ -75,8 +75,7 @@ def rec_text(path):
             file.write(text_to_file)
             break
     rescale_image = scale_image('static/images/' + path, f'photo.{extension}', 700)
-    if os.path.isfile(f'files/{name_file}.txt'):
-        return render_template('rec_text.html', texts=texts, path=f'photo.{extension}', filename=name_file)
+    return render_template('rec_text.html', texts=texts, path=f'photo.{extension}', filename=name_file)
 
 
 @app.route('/send-file/<filename>', methods=['GET', 'POST'])
