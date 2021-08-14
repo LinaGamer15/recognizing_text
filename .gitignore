@@ -51,4 +51,6 @@ coverage.xml
 .pytest_cache/
 pytestdebug.log
 
+ignored_file.py
+
 # Translations
