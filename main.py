@@ -10,7 +10,7 @@ import pytesseract
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'fdsfijduiU78784395RakIRFEFIOso00(('
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
 
 class ImageUpload(FlaskForm):
