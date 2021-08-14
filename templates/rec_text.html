@@ -18,7 +18,8 @@
             {% for text in texts %}
             <p class="text-left">{{ text }}<br /></p>
             {% endfor %}
-            <a class="btn btn-dark btn-large rounded-pill shadow-sm mt-5 pl-4 pr-4 button" href="{{ url_for('send', filename=filename) }}">Send File</a>
+            <a class="btn btn-dark btn-large rounded-pill shadow-sm mt-5 mr-3 pl-4 pr-4 button text-left" href="{{ url_for('home') }}">Return</a>
+            <a class="btn btn-dark btn-large rounded-pill shadow-sm mt-5 pl-4 pr-4 button" href="{{ url_for('send', filename=filename) }}">Download File</a>
         </div>
     </div>
 
