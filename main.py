@@ -8,7 +8,7 @@ import glob
 import cv2
 import pytesseract
 import os
-# create file ignore_file.py and in .git/info/exclude add /ignored_file.py
+# create file ignore_file.py
 from ignored_file import SECRET_KEY, path_to_tesseract
 
 app = Flask(__name__)
